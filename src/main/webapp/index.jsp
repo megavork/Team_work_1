@@ -16,23 +16,23 @@
 
                 <h1><b>Personal Bank list</b></h1>
 
-                <input type="search" name="firstName" placeholder="Enter your first name" />
-                <input type="search" name="lastName" placeholder="Enter your last name" />
+                <input type="search" name="firstName" placeholder="Enter your first name" required/>
+                <input type="search" name="lastName" placeholder="Enter your last name" required/>
 
                 <h2><b>Choose your sex:</b></h2>
 
                 <div>
-                    <input type="radio" name="sex" value="men" id="Men">
+                    <input type="radio" name="sex" value="men" id="Men" required>
                     <label for="Men">Men</label>
 
-                    <input type="radio" name="sex"  value="women" id="Women">
+                    <input type="radio" name="sex"  value="women" id="Women" required>
                     <label for="Women">Women</label>
                 </div>
 
                 <h2><b>Select your region:</b></h2>
 
                 <div class="select-style">
-                    <select name="region">
+                    <select name="region" required>
                         <option value="Minsk"> Minsk </option>
                         <option value="Vitebsk"> Vitebsk </option>
                         <option value="Gomel"> Gomel </option>
@@ -43,7 +43,7 @@
                 </div>
 
                 <h2><b>Enter your salary:</b></h2>
-                <input type="number" name="price" placeholder="Enter your price" />
+                <input type="number" name="price" placeholder="Enter your price" required/>
 
                 <input type="reset" class="btn" value="Clear all"/>
                 <input type="submit" class="btn" value="Send message"/>

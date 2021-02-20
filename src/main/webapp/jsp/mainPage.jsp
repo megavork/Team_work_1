@@ -18,9 +18,9 @@
         <div>
             <form class="mainForm" method="post" action="/main" id="Name">
 
-                <input class="fName" type="search" name="firstName" placeholder="Enter your first name" />
+                <input required class="fName" type="search" name="firstName" placeholder="Enter your first name" autofocus required/>
                 <br/><br>
-                <input class="lName" type="search" name="lastName" placeholder="Enter your last name" />
+                <input required class="lName" type="search" name="lastName" placeholder="Enter your last name" />
                 <br/>
 
                 <p><b class="sexTitle">Choose your sex:</b></p>
@@ -35,10 +35,10 @@
                     <option value="Brest"> Brest </option>
                 </select><br><br>
 
-                <input class="pricePanel" type="number" name="price" placeholder="Enter your price" />
+                <input class="pricePanel" type="number" name="price" placeholder="Enter your price" required/>
                 <br/><br>
 
-                <input type="submit" class="btn" value="submit"/>
+                <input type="submit" class="btn" value="submit" formnovalidate/>
                 <input type="reset" class="btn" value="reset"/>
 
             </form>

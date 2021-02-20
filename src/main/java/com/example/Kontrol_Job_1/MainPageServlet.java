@@ -22,9 +22,6 @@ public class MainPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        if(base != null)
-            req.setAttribute("personBase",base.getFullSortedList());
-
         req.getRequestDispatcher("/jsp/mainPage.jsp").forward(req, resp);
 
     }
@@ -32,7 +29,6 @@ public class MainPageServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         session = req.getSession();
-
 
         String firstName = req.getParameter("firstName");
         String lastName = req.getParameter("lastName");

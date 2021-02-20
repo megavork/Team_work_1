@@ -35,6 +35,7 @@ public class Calc {
         } else {
             tax *= 0.95;
         }
-        return tax * 27;
+        tax *= 27;      //convert to BYN from base value.
+        return tax;
     }
 }
