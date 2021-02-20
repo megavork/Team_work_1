@@ -6,6 +6,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<style>
+    <%@include file="/css/style.css"%>
+</style>
 <html>
     <head>
         <title>FirstPage</title>
@@ -13,18 +16,17 @@
 
     <body>
         <div>
-            <form method="post" action="/main" id="Name" >
+            <form class="mainForm" method="post" action="/main" id="Name">
 
-                <input type="search" name="firstName" placeholder="Enter your first name" />
+                <input class="fName" type="search" name="firstName" placeholder="Enter your first name" />
+                <br/><br>
+                <input class="lName" type="search" name="lastName" placeholder="Enter your last name" />
                 <br/>
-                <input type="search" name="lastName" placeholder="Enter your last name" />
-                <br/>
 
-                <p><b>Choose your sex:</b></p>
-                <p><input name="sex" type="radio" value="men"> Men</p>
-                <p><input name="sex" type="radio" value="women"> Women</p>
+                <p><b class="sexTitle">Choose your sex:</b></p>
+                <p><input class="sexBox" name="sex" type="radio" value="men"> Men <input name="sex" type="radio" value="women"> Women</p>
 
-                <select name="region">
+                <select class="regionList" name="region">
                     <option value="Minsk"> Minsk </option>
                     <option value="Vitebsk"> Vitebsk </option>
                     <option value="Gomel"> Gomel </option>
@@ -33,8 +35,8 @@
                     <option value="Brest"> Brest </option>
                 </select><br><br>
 
-                <input type="number" name="price" placeholder="Enter your price" />
-                <br/>
+                <input class="pricePanel" type="number" name="price" placeholder="Enter your price" />
+                <br/><br>
 
                 <input type="submit" class="btn" value="submit"/>
                 <input type="reset" class="btn" value="reset"/>
