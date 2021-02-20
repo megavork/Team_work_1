@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f69a73;
+}
+table {
+    position: relative;
+    width: 56%;
+    margin: 50px auto 0;
+    background: white;
+    font: 12pt sans-serif;
+    font: 90% serif;
+}
+.center {
+    margin: 50px auto 0;
+    font-family: "Times New Roman";
+    font: 125% "Times New Roman";
+}
