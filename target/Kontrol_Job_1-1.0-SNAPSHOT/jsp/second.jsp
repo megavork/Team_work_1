@@ -34,5 +34,7 @@
 
 </form>
 
+<p><img src="gifka/gifka.gif"></p>
+
 </body>
 </html>
