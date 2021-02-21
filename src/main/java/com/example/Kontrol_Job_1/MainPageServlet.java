@@ -11,8 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 @WebServlet("/main")
 public class MainPageServlet extends HttpServlet {
@@ -23,7 +21,6 @@ public class MainPageServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         req.getRequestDispatcher("/jsp/index.jsp").forward(req, resp);
-
     }
 
     @Override
@@ -48,7 +45,4 @@ public class MainPageServlet extends HttpServlet {
 
         getServletContext().getRequestDispatcher("/jsp/second.jsp").forward(req, resp);
     }
-
-
-
 }
