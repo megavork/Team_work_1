@@ -1,0 +1,32 @@
+* {
+box-sizing: border-box;
+}
+body {
+   background: #f69a73;
+}
+table {
+position: relative;
+width: 60%;
+margin: 50px auto 0;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+text-align: left;
+border-collapse: separate;
+border-spacing: 5px;
+background: white;
+color: #000000;
+border: 16px solid #ECE9E0;
+border-radius: 20px;
+}
+th {
+font-size: 18px;
+padding: 10px;
+}
+td {
+background: #F5D7BF;
+padding: 10px;
+}
+p {
+position: relative;
+margin: 50px auto 0;
+text-align: center;
+}

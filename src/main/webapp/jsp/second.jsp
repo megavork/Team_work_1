@@ -1,20 +1,40 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-    <head>
-        <title>Sorting users</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/page_two_style_2.css">
+    <title>Пробник</title>
+</head>
+<body>
 
-    <body>
+<form class="decor">
 
-        <h1>
-            <c:forEach var="person" items="${sessionScope.personBase}">
-                    <p>${person.firstName}: ${person.lastName}: ${person.sex}: ${person.region}: ${person.price}</p>
-            </c:forEach>
+    <table>
 
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Sex</th>
+            <th>Region</th>
+            <th>Price</th>
+        </tr>
 
+        <c:forEach var="person" items="${sessionScope.personBase}">
+            <tr>
+                <td>${person.firstName}</td>
+                <td>${person.lastName}</td>
+                <td>${person.sex}</td>
+                <td>${person.region}</td>
+                <td>${person.price}</td>
+            </tr>
+        </c:forEach>
 
-        </h1>
+    </table>
 
-    </body>
+</form>
+
+<p><img src="gifka/gifka.gif"></p>
+
+</body>
 </html>
