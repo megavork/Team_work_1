@@ -44,13 +44,9 @@
 
                 <h2><b>Enter your salary:</b></h2>
                 <input type="number" min="1" name="price" placeholder="Enter your price" required/>
-
                 <input type="reset" class="btn" value="Clear all"/>
                 <input type="submit" class="btn" value="Send message"/>
-
-
             </div>
         </form>
-
     </body>
 </html>
